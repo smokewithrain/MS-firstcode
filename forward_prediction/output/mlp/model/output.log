@@ -1,0 +1,168 @@
+训练集样本个数: 800, 验证集样本个数: 100, 测试集样本个数: 100
+数据形式为：
+数据输入param: torch.Size([7]), tensor([0.8824, 0.0588, 0.5000, 0.0588, 0.0000, 0.0000, 0.4167])
+数据输出S11: torch.Size([1001]), tensor([0.9840, 0.9837, 0.9833,  ..., 0.9888, 0.9889, 0.9889])
+数据标签label为: 3
+label的不同值为: {np.int64(1), np.int64(2), np.int64(3)}
+数据集索引已保存在index文件夹
+Model definition saved.
+{'batch_size': 64, 'epoch_num': 50, 'seed': 42, 'input_dir': WindowsPath('input'), 'output_dir': WindowsPath('output/mlp'), 'save_index': True, 'model': 'mlp', 'lr': 0.002, 'patience': 5, 'device': device(type='cpu')}
+Hyperparameters saved to output\mlp\model\hyperparameters.json
+   epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC  val_MSE   val_MAE   val_MRE    val_ACC
+0      1    9.913237  7.997419   0.038629    0.10148   0.283391  71.660873  0.02852  0.104014  0.245698  75.430222
+✅ Validation loss decreased (0.104014). Saving best model.
+   epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+1      2    7.844454  7.179894   0.029708   0.119254   0.247025  75.297455  0.029121  0.112973  0.219838  78.016243
+⚠️ EarlyStopping counter: 1 out of 5
+   epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+2      3    7.321089  7.203393   0.026817   0.101413     0.2202  77.980003  0.026263  0.093552  0.213533  78.646751
+✅ Validation loss decreased (0.093552). Saving best model.
+   epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+3      4    7.083928  6.932553   0.025057   0.096933   0.213958   78.60424  0.025872  0.102249  0.212099  78.790085
+⚠️ EarlyStopping counter: 1 out of 5
+   epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+4      5    7.026832  6.764047    0.02544   0.102951   0.216877  78.312317  0.024336  0.096022  0.207291  79.270912
+⚠️ EarlyStopping counter: 2 out of 5
+   epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+5      6    6.861918  6.472621   0.023511   0.095145   0.211038  78.896233  0.022953  0.093373  0.199813  80.018723
+✅ Validation loss decreased (0.093373). Saving best model.
+   epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+6      7    6.617222  6.097109    0.02289   0.095252   0.203519  79.648148  0.020796  0.088042  0.190063  80.993736
+✅ Validation loss decreased (0.088042). Saving best model.
+   epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE  val_MAE   val_MRE    val_ACC
+7      8    6.099906  5.619948   0.020042   0.086522   0.189527  81.047264  0.018856  0.08355  0.177248  82.275169
+✅ Validation loss decreased (0.083550). Saving best model.
+   epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+8      9    5.769144  5.285589   0.019383   0.085408   0.179956  82.004417  0.017732  0.080481  0.168942  83.105789
+✅ Validation loss decreased (0.080481). Saving best model.
+   epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+9     10    5.534033  5.020018   0.018624   0.083095   0.174265  82.573517  0.017081  0.078905  0.161981  83.801895
+✅ Validation loss decreased (0.078905). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE  val_MAE   val_MRE    val_ACC
+10     11    5.259756  4.868715   0.018006   0.080614   0.165232  83.476822  0.016113  0.07471  0.156945  84.305496
+✅ Validation loss decreased (0.074710). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+11     12    5.163823  4.763161   0.017358    0.07819   0.162064   83.79361  0.015753  0.073491  0.153444  84.655624
+✅ Validation loss decreased (0.073491). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC  val_MSE   val_MAE   val_MRE   val_ACC
+12     13    5.063578   4.67288   0.016904   0.076986   0.159663  84.033714  0.01535  0.073077  0.152005  84.79953
+✅ Validation loss decreased (0.073077). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+13     14    4.956144  4.554575   0.016611   0.076527   0.156999   84.30014  0.015116  0.072426  0.148842  85.115852
+✅ Validation loss decreased (0.072426). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+14     15    4.839748  4.492118   0.016334   0.075492   0.153396  84.660416  0.014496  0.070003  0.146831  85.316856
+✅ Validation loss decreased (0.070003). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+15     16    4.787903  4.406049   0.015743   0.074028   0.153561  84.643867  0.014249  0.069328  0.144259  85.574043
+✅ Validation loss decreased (0.069328). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+16     17    4.679379  4.359386   0.015402   0.072731   0.149254  85.074631  0.014032  0.068229  0.142174  85.782562
+✅ Validation loss decreased (0.068229). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+17     18    4.605936  4.299648   0.015111    0.07151   0.146357  85.364311  0.013817  0.067605  0.140093  85.990677
+✅ Validation loss decreased (0.067605). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+18     19    4.592217  4.223514   0.014963   0.070974   0.145664  85.433601  0.013248  0.065702  0.138203  86.179718
+✅ Validation loss decreased (0.065702). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+19     20    4.519224  4.150152   0.014462    0.06906   0.144252  85.574829  0.013267  0.066108  0.135763  86.423752
+⚠️ EarlyStopping counter: 1 out of 5
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+20     21    4.449647  4.136297   0.014384   0.068862   0.140855   85.91449  0.013121  0.065552  0.135818  86.418167
+✅ Validation loss decreased (0.065552). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+21     22    4.330459  4.061383   0.013802    0.06727   0.138711  86.128876  0.013116  0.065732  0.132957  86.704346
+⚠️ EarlyStopping counter: 1 out of 5
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+22     23    4.388523  4.039707   0.014358   0.068719    0.14011   85.98896  0.012671  0.064268  0.133196  86.680389
+✅ Validation loss decreased (0.064268). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC  val_MSE   val_MAE  val_MRE    val_ACC
+23     24    4.270724   3.97783    0.01354   0.066598   0.137037  86.296333   0.0126  0.064124  0.13095  86.905006
+✅ Validation loss decreased (0.064124). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+24     25    4.213966  3.927251   0.013546    0.06647   0.135341  86.465942  0.012459  0.064213  0.130295  86.970535
+⚠️ EarlyStopping counter: 1 out of 5
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+25     26    4.190745  3.902388    0.01347   0.066117    0.13422  86.577965  0.012208  0.063102  0.129538  87.046165
+✅ Validation loss decreased (0.063102). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+26     27    4.136961  3.841795   0.013117   0.065243   0.134067  86.593292  0.012055  0.062942  0.128208  87.179169
+✅ Validation loss decreased (0.062942). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+27     28    4.073779   3.79952   0.013228    0.06551   0.131998  86.800163  0.011874  0.062584  0.127399  87.260048
+✅ Validation loss decreased (0.062584). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+28     29    4.061959  3.736581    0.01273   0.063927   0.131965  86.803497  0.011684  0.061689  0.124972  87.502747
+✅ Validation loss decreased (0.061689). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE  val_MRE    val_ACC
+29     30    3.908217  3.680526   0.012504   0.063184   0.127153  87.284737  0.011335  0.060523  0.12383  87.617004
+✅ Validation loss decreased (0.060523). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+30     31    3.877698  3.651268   0.012351   0.062946    0.12652  87.348022  0.011279  0.060169  0.122822  87.717834
+✅ Validation loss decreased (0.060169). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+31     32    3.864072   3.61106   0.012291   0.062465   0.125656  87.434402  0.011075  0.059572  0.121739  87.826141
+✅ Validation loss decreased (0.059572). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE  val_MRE    val_ACC
+32     33    3.814168  3.580588   0.012067   0.061968   0.124744  87.525574  0.011075  0.059179  0.12028  87.972015
+✅ Validation loss decreased (0.059179). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+33     34    3.786071  3.529564   0.012077   0.061526   0.124101  87.589943  0.010768  0.058364  0.119397  88.060303
+✅ Validation loss decreased (0.058364). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+34     35    3.716738  3.472236   0.011858    0.06122   0.122037  87.796295  0.010747  0.058341  0.117629  88.237068
+⚠️ EarlyStopping counter: 1 out of 5
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+35     36    3.711174  3.436759   0.011896   0.061402   0.122594   87.74057  0.010573  0.058324  0.117407  88.259315
+⚠️ EarlyStopping counter: 2 out of 5
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE  val_MAE  val_MRE   val_ACC
+36     37    3.656026  3.407517   0.011699   0.060788   0.120746  87.925354  0.010396    0.057  0.11598  88.40197
+✅ Validation loss decreased (0.057000). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE   val_ACC
+37     38    3.539407  3.375385   0.011243   0.059302   0.118347  88.165268  0.010338  0.056536  0.114611  88.53891
+✅ Validation loss decreased (0.056536). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE  val_MRE    val_ACC
+38     39    3.596509  3.346603   0.011638   0.060338   0.119263  88.073654  0.010185  0.056236  0.11402  88.597946
+✅ Validation loss decreased (0.056236). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE  val_MAE   val_MRE    val_ACC
+39     40    3.467291  3.331947   0.011139   0.059087   0.116885  88.311447  0.010224  0.05655  0.113872  88.612793
+⚠️ EarlyStopping counter: 1 out of 5
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC  val_MSE   val_MAE   val_MRE    val_ACC
+40     41    3.502223  3.313987    0.01127   0.059483   0.116886  88.311386     0.01  0.055295  0.112737  88.726288
+✅ Validation loss decreased (0.055295). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE  val_MRE    val_ACC
+41     42    3.387111  3.289767   0.010736   0.057606   0.113366  88.663383  0.010065  0.055542  0.11218  88.781952
+⚠️ EarlyStopping counter: 1 out of 5
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+42     43    3.363939  3.264065   0.010988   0.058539   0.113844  88.615616  0.009896  0.055089  0.111568  88.843193
+✅ Validation loss decreased (0.055089). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE   val_ACC
+43     44    3.422082  3.239918   0.010994   0.058193   0.114639  88.536087  0.009724  0.054428  0.110703  88.92971
+✅ Validation loss decreased (0.054428). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC  val_MSE   val_MAE   val_MRE    val_ACC
+44     45    3.359012  3.212301   0.010585   0.056839   0.113378  88.662224  0.00974  0.054566  0.109972  89.002792
+⚠️ EarlyStopping counter: 1 out of 5
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+45     46    3.318936  3.170877     0.0106   0.056826   0.111551  88.844879  0.009673  0.054526  0.109022  89.097855
+⚠️ EarlyStopping counter: 2 out of 5
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+46     47    3.316356  3.157666   0.010554   0.056999   0.112466  88.753372  0.009434  0.053215  0.108371  89.162941
+✅ Validation loss decreased (0.053215). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+47     48    3.294197  3.132006   0.010531   0.056551   0.110681  88.931915  0.009644  0.054415  0.107926  89.207352
+⚠️ EarlyStopping counter: 1 out of 5
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+48     49    3.213288  3.101534   0.010275    0.05592   0.109471  89.052917  0.009256  0.053054  0.107045  89.295502
+✅ Validation loss decreased (0.053054). Saving best model.
+    epoch  train_loss  val_loss  train_MSE  train_MAE  train_MRE  train_ACC   val_MSE   val_MAE   val_MRE    val_ACC
+49     50    3.196753  3.078976   0.010073   0.055189   0.108466  89.153427  0.009184  0.052684  0.106219  89.378113
+✅ Validation loss decreased (0.052684). Saving best model.
+History each epoch saved to output\mlp\evaluate\history.csv
+History appended to output\mlp\evaluate\history.csv
+损失曲线可视化已完毕
+测试集上的评估指标计算已完毕
+测试集上全部样本的mae直方图已绘制
+测试集上典型1的mae最低、最接近平均值、最高的样本 real vs pred absorption已绘制
+测试集上典型2的mae最低、最接近平均值、最高的样本 real vs pred absorption已绘制
+测试集上典型3的mae最低、最接近平均值、最高的样本 real vs pred absorption已绘制

@@ -1,0 +1,12 @@
+{
+    "batch_size": 64,
+    "epoch_num": 50,
+    "seed": 42,
+    "input_dir": "input",
+    "output_dir": "output\\mlp",
+    "save_index": true,
+    "model": "mlp",
+    "lr": 0.002,
+    "patience": 5,
+    "device": "cpu"
+}
