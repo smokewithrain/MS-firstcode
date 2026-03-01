@@ -349,5 +349,4 @@ if __name__ == "__main__":
     pso_ID_model.run()
 
 
-    print(param_target)
     print(S11_target)

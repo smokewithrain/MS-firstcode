@@ -4,7 +4,7 @@
 
 from pathlib import Path 
 
-base_path = Path(r'inverse_design')
+base_path = Path(r'./')
 
 # 设置【输入】数据集、模型路径
 input_dir = base_path / "input"
